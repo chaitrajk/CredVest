@@ -1,0 +1,73 @@
+/* ============================================================
+   GLOBAL RESET + LAYOUT FIX FOR FIXED NAVBAR (NO WHITE GAP)
+   ============================================================ */
+
+:root {
+  --app-header-height: 800px;   /* height of your fixed navbar */
+  --app-sidebar-width: 0px;    /* set to 240px if you add left sidebar */
+}
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background: #ffffff;
+  font-family: system-ui, sans-serif;
+}
+
+/* ------------------------------
+   FIX WHITE GAP UNDER NAVBAR
+   ------------------------------ */
+
+/* REMOVE the forced padding that caused the huge gap */
+#root > * {
+  padding-top: 0 !important;
+  padding-left: 0 !important;
+  min-height: auto;
+  overflow: visible;
+}
+
+/* Optional small clean gap: use ONLY if needed */
+/*
+.main-content {
+  margin-top: calc(var(--app-header-height) - 40px);
+}
+*/
+
+/* ------------------------------
+   SEARCH DROPDOWN (from Stocks)
+   ------------------------------ */
+
+.search-dropdown-wrapper {
+  position: relative;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 2000;
+  background: white;
+  border-radius: 8px;
+  max-height: 360px;
+  overflow-y: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* Scrollbar styling */
+.search-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+.search-dropdown::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}

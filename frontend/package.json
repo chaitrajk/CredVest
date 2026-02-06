@@ -1,0 +1,36 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "canvas-confetti": "^1.9.4",
+    "chart.js": "^4.5.1",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "dayjs": "^1.11.19",
+    "file-saver": "^2.0.5",
+    "framer-motion": "^12.23.24",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^3.0.4",
+    "lightweight-charts": "^5.0.9",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.10",
+    "react-chartjs-2": "^5.3.1",
+    "react-dom": "^18.3.1",
+    "react-financial-charts": "^2.0.1",
+    "react-router-dom": "^7.9.4",
+    "react-scripts": "^5.0.1",
+    "recharts": "^3.3.0",
+    "socket.io-client": "^4.8.1"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

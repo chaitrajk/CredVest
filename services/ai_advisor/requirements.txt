@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+pytesseract
+pillow
+spacy
+yfinance
+prophet
+python-multipart
+pandas
+numpy
